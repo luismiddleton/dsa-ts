@@ -1,0 +1,32 @@
+{
+  "name": "@luism/dsa-ts",
+  "version": "0.0.0",
+  "type": "module",
+  "author": {
+    "name": "Luis Middleton"
+  },
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@rslib/core": "^0.12.4",
+    "@types/node": "^22.18.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
