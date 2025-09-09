@@ -7,7 +7,7 @@
  * Each node contains a data element and references to the next (and optionally previous) node in the list.
  * Used internally by linked list implementations.
  */
-class Node<T> {
+export class Node<T> {
   public data: T;
   public next: Node<T> | null;
   public prev: Node<T> | null;

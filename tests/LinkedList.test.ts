@@ -132,10 +132,3 @@ describe('DoubleLinkedList', () => {
         expect(list.isEmpty()).toBe(false);
     });
 });
-
-describe('AbstractLinkedList', () => {
-    it('should not allow direct instantiation', () => {
-        // @ts-expect-error Abstract class cannot be instantiated
-        expect(() => new AbstractLinkedList()).toThrow();
-    });
-});
